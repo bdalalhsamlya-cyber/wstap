@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واجهة تطبيق محاكاة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* التنسيقات الأساسية */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* خلفية خفيفة */
+            direction: rtl; /* لدعم اللغة العربية */
+            text-align: right;
+        }
+
+        /* شريط العنوان (Header) */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #ddd;
+            color: #333;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #222;
+            margin: 0;
+        }
+
+        .header-icon {
+            font-size: 24px;
+            color: #444;
+        }
+
+        /* شبكة الأيقونات */
+        .grid-container {
+            display: grid;
+            /* 4 أعمدة متساوية */
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px; /* مسافة بسيطة بين العناصر */
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* زر الأيقونة */
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 5px;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.2s;
+        }
+
+        .grid-item:hover {
+            background-color: #e9e9e9;
+            border-radius: 8px;
+        }
+
+        .icon-box {
+            background-color: #ffffff; /* لون خلفية الأيقونة بيضاء */
+            color: #2e7d32; /* لون الأيقونات أخضر غامق */
+            font-size: 35px;
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5px;
+            /* إضافة ظل خفيف للتشبه بأسلوب التطبيق */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            border: 1px solid #eee;
+        }
+
+        .item-label {
+            font-size: 13px;
+            margin-top: 5px;
+            font-weight: 500;
+        }
+
+        /* تعديلات على أيقونات معينة لتشبه الصورة */
+        /* أيقونة الإعدادات (ترس) */
+        .fa-cog {
+            font-size: 40px;
+            color: #2e7d32;
+        }
+        /* أيقونة السهم في 'Exit' */
+        .fa-right-from-bracket {
+            font-size: 30px;
+        }
+        /* أيقونة 'Dark Theme' */
+        .fa-droplet {
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <span class="header-icon"><i class="fas fa-bars"></i></span> <h1>JAScript</h1>
+        <span class="header-icon"><i class="fas fa-ellipsis-v"></i></span> </div>
+
+    <div class="grid-container">
+
+        <a href="#" class="grid-item">
+            <div class="icon-box"><i class="fas fa-th-large"></i></div>
+            <span class="item-label">Apps</span>
+        </a>
+        <a href="#" class="grid-item">
+            <div class="icon-box"><i class="fas fa-folder-open"></i></div>
+            <span class="item-label">Projects</span>
+        </a>
+        <a href="#" class="grid-item">
+            <div class="icon-box"><i class="fas fa-square-full" style="font-size: 25px; border: 3px dashed #2e7d32; color: transparent;"></i></div>
+            <span class="item-label">Scripts</span>
+        </a>
+        <a href="#" class="grid-item">
+            <div class="icon-box"><i class="fas fa-pencil-alt"></i></div>
+            <span class="item-label">Editor</span>
+        </a>
+
+        <a href="#" class="grid-item">
+            <div class="icon-box"><i class="fas fa-code"></i></div>
+            <span class="item-label">Samples</span>
+        </a>
+        <a href="#" class="grid-item">
+            <div class="icon-box"><i class="fas fa-cog"></i></div>
+            <span class="item-label">Settings</span>
+        </a>
+        <a href="#" class="grid-item">
+            <div class="icon-box"><i class="fas fa-droplet"></i></div>
+            <span class="item-label">Dark Theme</span>
+        </a>
+        <a href="#" class="grid-item">
+            <div class="icon-box"><i class="fas fa-share-alt"></i></div>
+            <span class="item-label">Share</span>
+        </a>
+
+        <a href="#" class="grid-item">
+            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+            <span class="item-label">Contact</span>
+        </a>
+        <a href="#" class="grid-item">
+            <div class="icon-box"><i class="fas fa-question-circle"></i></div>
+            <span class="item-label">Help</span>
+        </a>
+        <a href="#" class="grid-item">
+            <div class="icon-box"><i class="fas fa-star"></i></div>
+            <span class="item-label">Rate</span>
+        </a>
+        <a href="#" class="grid-item">
+            <div class="icon-box"><i class="fas fa-bell"></i></div>
+            <span class="item-label">Notifications</span>
+        </a>
+
+        
